@@ -1,0 +1,23 @@
+{
+  "files": {
+    "static/js/0.167efd85.chunk.js": "/s/static/js/0.167efd85.chunk.js",
+    "static/js/0.167efd85.chunk.js.map": "/s/static/js/0.167efd85.chunk.js.map",
+    "main.css": "/s/static/css/main.843d5065.chunk.css",
+    "main.js": "/s/static/js/main.19c68586.chunk.js",
+    "main.js.map": "/s/static/js/main.19c68586.chunk.js.map",
+    "runtime~main.js": "/s/static/js/runtime~main.ecf88088.js",
+    "runtime~main.js.map": "/s/static/js/runtime~main.ecf88088.js.map",
+    "static/css/3.521c19ee.chunk.css": "/s/static/css/3.521c19ee.chunk.css",
+    "static/js/3.c886588f.chunk.js": "/s/static/js/3.c886588f.chunk.js",
+    "static/js/3.c886588f.chunk.js.map": "/s/static/js/3.c886588f.chunk.js.map",
+    "editor.worker.js": "/s/editor.worker.js",
+    "editor.worker.js.map": "/s/editor.worker.js.map",
+    "index.html": "/s/index.html",
+    "precache-manifest.44a83e1f8e521946f188776e09e98d0a.js": "/s/precache-manifest.44a83e1f8e521946f188776e09e98d0a.js",
+    "service-worker.js": "/s/service-worker.js",
+    "static/css/3.521c19ee.chunk.css.map": "/s/static/css/3.521c19ee.chunk.css.map",
+    "static/css/main.843d5065.chunk.css.map": "/s/static/css/main.843d5065.chunk.css.map",
+    "static/media/blinker-v1-latin.css": "/s/static/media/blinker-v1-latin-regular.43fed278.woff",
+    "static/media/foundation-icons.css": "/s/static/media/foundation-icons.e20945d7.ttf"
+  }
+}

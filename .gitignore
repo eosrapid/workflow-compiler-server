@@ -1,0 +1,4 @@
+.DS_Store
+*.DS_Store
+worflow-compiler-server/node_modules
+worflow-compiler-server/node_modules/*
