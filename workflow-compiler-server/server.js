@@ -13,7 +13,11 @@ const processManager = require('./src/lib/processManager');
 
 const corsWhitelist = [
   'http://localhost:'+PORT,
+  'http://127.0.0.1:'+PORT,
   'http://localhost:'+3000,
+  'http://127.0.0.1:'+3000,
+  'http://localhost:'+8000,
+  'http://127.0.0.1:'+8000,
 ];
 
 const corsOptions = {
