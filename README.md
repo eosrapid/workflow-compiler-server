@@ -1,7 +1,7 @@
 # Workflow Compiler Server
 
 ## Instructions 
-To get started, just run `docker run --rm -p 3000:3000 eosrapid/addapt:1.2.2`
+To get started, just run `docker run --rm -p 3000:3000 eosrapid/adappt:1.2.5`
 
 
 ### To build your EOS Smart Contract, click on the gold crown located at the top of the page next to your project's name!
