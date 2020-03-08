@@ -1,7 +1,7 @@
 #!/bin/bash
 IMAGE_NAME="adappt"
 CONTAINER_NAME="eosworkflowcon"
-VERSION="1.2.5"
+VERSION="1.3.0"
 IMAGE_FULL_NAME="${IMAGE_NAME}:${VERSION}"
 
 
