@@ -67,7 +67,7 @@ const MESSAGE_NO_PASS =
 ,adPPPPP88  88         8P  d8""""""""8b    88           88             88     
 88,    ,88  88      .a8P  d8'        \`8b   88           88             88,    
 \`"8bbdP"Y8  88888888Y"'  d8'          \`8b  88           88             "Y888
-         aDAPPt EOS IDE v0.2.0  | Made with love by EOSRapidPROD
+         aDAPPt EOS IDE v1.4.0  | Made with love by EOSRapidPROD
 
          To get started open http://localhost:${PORT}/ in your browser
 

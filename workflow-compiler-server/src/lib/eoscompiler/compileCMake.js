@@ -7,7 +7,7 @@ async function runCMake(projectHomePath){
   await fs.mkdirp(buildFolderPath);
 
   try {
-    const result = await processManager.spawnProc("cmake",{args: [".."], cwd:buildFolderPath});//(dType,msg)=>console.log(`T[${dType}]: ${msg}`)
+    const result = await processManager.spawnProc("cmake",{args: [".."], cwd:buildFolderPath},(dType,msg)=>console.log(`T[${dType}]: ${msg}`))
   }catch(e){
     return {success: false, error: ""};
   }
