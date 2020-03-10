@@ -1,8 +1,7 @@
 #!/bin/bash
 IMAGE_NAME="adappt"
-CONTAINER_NAME="eosworkflowcon"
-VERSION="1.3.0"
-IMAGE_FULL_NAME="${IMAGE_NAME}:${VERSION}"
+VERSION="1.4.0"
+IMAGE_FULL_NAME="eosrapid/${IMAGE_NAME}:${VERSION}"
 
 
 docker rmi $IMAGE_FULL_NAME
