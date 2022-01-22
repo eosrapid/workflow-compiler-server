@@ -1,8 +1,9 @@
 FROM node:16-slim
 ENV EOS_CDT_DEB_URL "https://github.com/EOSIO/eosio.cdt/releases/download/v1.8.1/eosio.cdt_1.8.1-1-ubuntu-18.04_amd64.deb"
 RUN apt-get update && apt-get install --no-install-recommends -y wget ca-certificates && wget -O ./eoscdt.deb ${EOS_CDT_DEB_URL} && apt-get install -y ./eoscdt.deb && rm ./eoscdt.deb && apt-get remove --purge -y wget ca-certificates && apt-get -y clean && apt-get -y autoremove
-RUN mkdir -p /tmp/eosdev/workflow/contracts && chown -R node:node /tmp/eosdev/workflow/contracts
-RUN mkdir -p /eosdev/workflow/comp-server && chown -R node:node /eosdev/workflow/comp-server
+RUN mkdir -p /tmp/eosdev/workflow/contracts && mkdir -p /eosdev/workflow/comp-server
+ADD ./workflow-compiler-server/package.json /eosdev/workflow/comp-server/package.json
+RUN chown -R node:node /tmp/eosdev/workflow/contracts && chown -R node:node /eosdev/workflow/comp-server
 
 
 # Install Tini
@@ -14,8 +15,6 @@ RUN echo "${TINI_BINARY_SHA256}  /tini" | sha256sum --check --status && chmod +x
 # User workflow
 USER node
 WORKDIR /eosdev/workflow/comp-server
-ADD ./workflow-compiler-server/package.json /eosdev/workflow/comp-server/package.json
-ADD ./workflow-compiler-server/package-lock.json /eosdev/workflow/comp-server/package-lock.json
 RUN npm install
 ADD ./workflow-compiler-server /eosdev/workflow/comp-server
 ENV EOS_OUTPUT_PATH /tmp/eosdev/workflow/contracts
