@@ -1,6 +1,6 @@
 #!/bin/bash
 IMAGE_NAME="adappt"
-VERSION="1.4.0"
+VERSION="1.5.0"
 IMAGE_FULL_NAME="eosrapid/${IMAGE_NAME}:${VERSION}"
 
 
