@@ -1,6 +1,6 @@
 {
   "name": "workflow-compiler-server",
-  "version": "0.1.0",
+  "version": "1.5.0",
   "description": "Workflow EOS Compiler",
   "main": "server.js",
   "author": "EOSRapidProd",
