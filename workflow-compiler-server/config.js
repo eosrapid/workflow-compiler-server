@@ -12,6 +12,8 @@ function getUIntString(value, defaultValue){
 
 const CONFIG={
   PORT: getUIntString(process.env.PORT, 3000),
+  CORS_PORT: getUIntString(process.env.CORS_PORT, 3000),
+  ALLOW_ALL_CORS: process.env.ALLOW_ALL_CORS==="true"||process.env.ALLOW_ALL_CORS==="1",
   /*
   REDIS_HOST: process.env.REDIS_HOST || "127.0.0.1",
   REDIS_PORT: getUIntString(process.env.REDIS_PORT, 3000),

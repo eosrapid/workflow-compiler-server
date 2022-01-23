@@ -6,7 +6,7 @@ const path = require('path');
 const compression = require('compression');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const {PORT, LOG_SERVER_PASS_CODE, SERVER_PASS_CODE} = require('./config');
+const {PORT, LOG_SERVER_PASS_CODE, SERVER_PASS_CODE, CORS_PORT, ALLOW_ALL_CORS} = require('./config');
 const apiRouter = require('./src/api');
 const processManager = require('./src/lib/processManager');
 
@@ -14,6 +14,8 @@ const processManager = require('./src/lib/processManager');
 const corsWhitelist = [
   'http://localhost:'+PORT,
   'http://127.0.0.1:'+PORT,
+  'http://localhost:'+CORS_PORT,
+  'http://127.0.0.1:'+CORS_PORT,
   'http://localhost:'+3000,
   'http://127.0.0.1:'+3000,
   'http://localhost:'+8000,
@@ -22,6 +24,9 @@ const corsWhitelist = [
 
 const corsOptions = {
   origin: function(origin, callback) {
+    if(ALLOW_ALL_CORS){
+      return callback(null, true)
+    }
     if (!origin || corsWhitelist.indexOf(origin) !== -1) {
       callback(null, true)
     } else {
